@@ -1,0 +1,137 @@
+body{
+  font-family: openserif;
+}
+
+.home{
+  background: #1a1a1a;
+  margin-top: -1.5vh;
+  margin-left: -1.5vh;
+  margin-right: -1.5vh;
+  margin-bottom: 10vh;
+  color: white;
+}
+
+.text{
+  margin-top: -30vh;
+  margin-right: 20vw;
+  margin-left: 22vw;
+}
+
+.wrap{
+  height: 70vh;
+  display: grid;
+  place-items: center;
+}
+
+.type{
+  width: 22ch;
+  margin-left: 33vw;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: openserif;
+  font-size: 6vh;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 3vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  fonts-size: 32vh;
+  text-align: center;
+  padding: 0vh 2.5vw;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #FFD700;
+}
+
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
+
+th, td {
+  border: 3px solid #737373;
+  border-radius: 20px;
+  color: white;
+  padding: 5vh 5vw;
+  background-color: #737373;
+  text-align: center;
+}
+
+table {
+  border-spacing: 2vw;
+}
+
+.button {
+  align-items: center;
+  background-color: #ffd700;
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 18px;
+  height: 52px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+  opacity: .85;
+}
+
+.button:active {
+  outline: 0;
+}
+
+.button:focus {
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+  .button {
+    height: 48px;
+  }
+}
